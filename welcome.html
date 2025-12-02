@@ -1,0 +1,54 @@
+<!-- welcome.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - MERN Internship</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #4a4cf1, #6b7bff);
+      color: #fff;
+      text-align: center;
+    }
+    .container {
+      background: rgba(0,0,0,0.2);
+      padding: 40px;
+      border-radius: 15px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #fff;
+      color: #4a4cf1;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #e0e0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to MERN Internship</h1>
+    <p>Course Fee: ₹2500</p>
+    <button onclick="goToDashboard()">Add to cart</button>
+  </div>
+
+  <script>
+    function goToDashboard() {
+      window.location.href = 'dashboard.html';
+    }
+  </script>
+</body>
+</html>
